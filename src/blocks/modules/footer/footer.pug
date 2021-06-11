@@ -1,0 +1,25 @@
+- const menuItems1 = ['О компании', 'Товарные знаки', 'Награды', 'Отзывы', 'Вакансии']
+- const menuItems2 =  ['Станции катодной защиты ПКЗ-АР', 'Оборудование ЭХЗ', 'Телеметрия ЭХЗ', 'Комплекс телемеханики', 'Приборы']
+- const menuItems3 = ['Свидетельства', 'Патенты', 'Сводные данные', 'Членство']
+- const menuItems4 = ['Чертежи', 'Схемы', 'Правила', 'Нормы', 'Форма для скачивания']
+
+mixin footer-column (title, arr = [])
+	.footer-menu__col
+		h4.footer-menu__title= title
+		ul.footer-menu__list
+			each menuItem in arr 
+				li.footer-menu__item 
+					a.footer-menu__link(href="#")= menuItem 
+
+footer.footer
+	.container
+		.footer__body 
+			nav.footer__menu.footer-menu 
+				+footer-column('О компании', menuItems1)
+				+footer-column('Продукция', menuItems2)
+				+footer-column('Сертификаты', menuItems3)
+				+footer-column('Проектировщикам', menuItems4)
+				+footer-column('Обслуживание')
+				+footer-column('Новости')
+				+footer-column('Контакты')
+				

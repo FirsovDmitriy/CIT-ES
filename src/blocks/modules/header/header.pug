@@ -1,0 +1,36 @@
+include ../../components/ico/ico
+
+header.header
+	.container
+		.header__top
+			.header__info.header-info 
+				.header-info__logo 
+					img.header-info__lofo-icon(src="tpl/assets/svg/logo.svg", alt="")
+				a.header-info__phone(href="tel:+78452692196") +7 (8452) 69-21-96 
+				a.header-info__email(href="mailto:kom@cit-es.ru") kom@cit-es.ru 
+			.header__search
+				form.header-search__form(action="")
+					input.header-search__input(type="text" placeholder="Поиск")
+					button.header-search__btn magnifier
+		nav.header__menu.header-menu 
+			.header-menu__burger 
+				span.header-menu__line 
+			.header-menu__body 
+				ul.header-menu__list 
+					each menuItem in ['О компании', 'Продукция', 'Сертификаты', 'Проектировщикам', 'Сервис', 'Новости', 'Контакты']
+						li.header-menu__item
+							a.header-menu__link(href="#")= menuItem
+			.header-menu__inner.menu-inner 
+				.menu-inner__col
+					ul.menu-inner__list 
+						each internalMenuItem in ['Станции катодной защиты ПКЗ-АР', 'Оборудование ЭХЗ', 'Телеметрия ЭХЗ']
+							li.menu-inner__item 
+								a.menu-inner__link(href="#")= internalMenuItem
+				.menu-inner__col 
+					ul.menu-inner__list 
+						each internalMenuItem in ['Комплекс телемеханики', 'Приборы']
+							a.menu-inner__link(href="#")= internalMenuItem
+				.menu-inner__col 
+					.menu-inner__images 
+						.menu-inner__image-block 
+							img.menu-inner__img(src="tpl/assets/img/header/inner-menu-img.png", alt="")

@@ -1,0 +1,44 @@
+// @mixin screenS {
+//   @media only screen and (max-width: $mobileWidth) {
+//     @content;
+//   }
+// }
+
+// @mixin screenM {
+//   @media only screen and (max-width: $portraitTabletWidth) {
+//     @content;
+//   }
+// }
+
+// @mixin screenL {
+//   @media only screen and (max-width: $landscapeTabletWidth) {
+//     @content;
+//   }
+// }
+
+// @mixin screenXL {
+//   @media only screen and (max-width: $desktopWidth) {
+//     @content;
+//   }
+// }
+
+// @mixin screenXXL {
+//   @media only screen and (max-width: $wideDesktopWidth) {
+//     @content;
+//   }
+// }
+
+@mixin ObjektivMk1 {
+  font: {
+    family: 'Objektiv-Mk1';
+    weight: $fw-regular;
+    size: $font-size-primary;
+  }
+}
+
+@mixin Osvald {
+  font: {
+    family: 'Oswald';
+    weight: $fw-regular;
+  }
+}
