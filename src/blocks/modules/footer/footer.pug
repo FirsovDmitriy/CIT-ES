@@ -3,13 +3,14 @@
 - const menuItems3 = ['Свидетельства', 'Патенты', 'Сводные данные', 'Членство']
 - const menuItems4 = ['Чертежи', 'Схемы', 'Правила', 'Нормы', 'Форма для скачивания']
 
+//-  Mixin
 mixin footer-column (title, arr = [])
 	.footer-menu__col
 		h4.footer-menu__title= title
 		ul.footer-menu__list
 			each menuItem in arr 
-				li.footer-menu__item 
-					a.footer-menu__link(href="#")= menuItem 
+				li.footer-menu__list-item 
+					a.footer-menu__list-link(href="#")= menuItem 
 
 footer.footer
 	.container
@@ -22,4 +23,18 @@ footer.footer
 				+footer-column('Обслуживание')
 				+footer-column('Новости')
 				+footer-column('Контакты')
+			.footer__contacts.footer-contacts
+				.footer-contacts__row 
+					a.footer-contacts__phone(href="tel:+78452692196") +7 (8452) 69-21-96
+				.footer-contacts__row 
+					a.footer-contacts__text.footer-contacts__text--blue(href="mailto:kom@cit-es.ru") kom@cit-es.ru 
+				.footer-contacts__row 
+					p.footer-contacts__text 410010, Саратов,
+					p.footer-contacts__text 1-й Пугачёвский посёлок, 44-б
+				.footer-contacts__row 
+					p.footer-contacts__text С пн по пт: 09:00–17:00
+					p.footer-contacts__text Сб, вс — выходной
+		.footer__bottom 
+			p.footer__copyright © 2005–2021, Группа компаний «Центр Инновационных Технологий
+			p.footer__developer Создание сайта — nopreset
 				

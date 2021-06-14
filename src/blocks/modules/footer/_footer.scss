@@ -1,0 +1,62 @@
+.footer {
+    &__body {
+        display: flex;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 86px 0;
+    }
+    &__developer {
+        margin-right: 24px;
+    }
+}
+
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    &__col {
+        max-width: 175px;
+        margin: 0 80px 40px 0;
+        &:nth-child(4n + 4) {
+            margin: 0 0 40px 0;
+        }
+        &:nth-last-child(-n + 3) {
+            margin: 0 138px 40px 0;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        color: $blue-color;
+    }
+    &__list {
+        margin-top: 20px;
+        &-item {
+            & + & {
+                margin-top: 10px;
+            }
+        }
+        &-link {
+            font-size: $font-size-xs;
+        }
+    }
+}
+
+.footer-contacts {
+    flex-shrink: 0;
+    &__row {
+        & + & {
+            margin-top: 20px;
+        }
+    }
+    &__phone {
+        @include Osvald();
+        font-size: $font-size-sm;
+    }
+    &__text {
+        font-size: $font-size-xs;
+        &--blue {
+            color: $blue-color;
+        } 
+    }
+}
