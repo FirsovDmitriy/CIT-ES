@@ -27,14 +27,13 @@
     &__input {
         width: 100%;
         padding: 9.5px 46px 9.5px 20px;
-        border: 1px solid $white-col0r-300;
+        border: 1px solid $white-color-300;
         border-radius: 4px;
     }
     &__btn {
         position: absolute;
-        right: 16px;
+        right: 14px;
         top: 5px;
-        color: transparent;
     }
 }
 
@@ -45,4 +44,8 @@
         display: flex;
         justify-content: space-between;
     }
+}
+
+.menu-inner {
+    display: none;
 }

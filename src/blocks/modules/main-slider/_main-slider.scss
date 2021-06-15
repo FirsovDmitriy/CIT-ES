@@ -1,0 +1,33 @@
+.main-slider {
+    height: calc(100vh - 204px);
+    .swiper-container {
+        height: 100%;
+    }
+    &__slide {
+        background: url(../assets/svg/ellipce-bg.svg) right / contain no-repeat 
+            $white-color-bg;
+        padding: 80px 0 112px 0;
+        height: 100%;
+    }
+}
+
+.slide-banner {
+    &__title {
+        width: 34.3%;
+        text-transform: uppercase;
+        color: $blue-color;
+        margin: 0 0 60px 0;
+    }
+    &__row {
+        display: flex;
+        margin: 20px 0 0 0;
+    }
+    &__col {
+        & + & {
+            margin-left: 60px;
+        }
+        div {
+            font-weight: $fw-bold;
+        }
+    }
+}
