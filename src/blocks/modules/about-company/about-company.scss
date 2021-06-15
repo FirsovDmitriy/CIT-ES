@@ -1,0 +1,41 @@
+.about-company {
+    background: url(../assets/svg/about-company-bg.svg) center / contain no-repeat $white-color-bg;
+    padding: 80px 0 122.5px 0;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block-left {
+        flex-basis: 42.81%;
+    }
+    &__block-right {
+        padding: 0 40px 0 0;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__text {
+        line-height: 27px;
+        &--left {
+            margin-bottom: 63px;
+        }
+    }
+    &__row {
+        display: flex;
+        & + & {
+            margin-top: 40px;
+        }
+    }
+    &__col {
+        &:nth-child(1) {
+            margin-right: 80px;
+        }
+        span {
+            @include Osvald();
+            font-size: $font-size-lg;
+            line-height: 48px;
+            text-transform: uppercase;
+            color: $blue-color;
+        }
+    }
+}

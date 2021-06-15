@@ -1,0 +1,19 @@
+.more-detailed {
+    display: flex;
+    align-items: center;
+    color: $blue-color;
+    &__text {
+        margin: 0 12.5px 0 0;
+    }
+    &__circle {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 1px solid $blue-color;
+        display: flex;
+        justify-content: center;
+    }
+    .ico {
+        width: 7px;
+    }
+}

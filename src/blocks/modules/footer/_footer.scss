@@ -1,11 +1,11 @@
 .footer {
+    padding: 60px 0 85px 0;
     &__body {
         display: flex;
     }
     &__bottom {
         display: flex;
         justify-content: space-between;
-        margin: 0 0 86px 0;
     }
     &__developer {
         margin-right: 24px;

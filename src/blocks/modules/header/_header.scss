@@ -1,0 +1,48 @@
+.header {
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0 20px 0;
+    }
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    &__phone {
+        margin: 0 40px 0 65px;
+    }
+    &__email {
+        color: $blue-color;
+    }
+}
+
+.header-search {
+    flex-basis: 32.3%;
+    &__form {
+        position: relative;
+        display: flex;
+    }
+    &__input {
+        width: 100%;
+        padding: 9.5px 46px 9.5px 20px;
+        border: 1px solid $white-col0r-300;
+        border-radius: 4px;
+    }
+    &__btn {
+        position: absolute;
+        right: 16px;
+        top: 5px;
+        color: transparent;
+    }
+}
+
+.header-menu {
+    background: $white-color-100;
+    padding: 18px 0 18px 0;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
