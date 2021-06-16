@@ -1,0 +1,31 @@
+include ../../components/more-detailed/more-detailed
+
+mixin product-card (img, title)
+    .product__card.card-product
+        .card-product__block-img 
+            img.card-product__img(src= img, alt="")
+        h4.card-product__title= title
+        +more-detailed('#')
+
+.product
+    .container
+        h2.product__title Продукция
+        .products__slider.product-slider
+            .swiper-container.product-slider__wrapper 
+                .swiper-wrapper
+                    .swiper-slide
+                        +product-card('tpl/assets/img/product.png', 'Станции катодной защиты ПКЗ-АР')
+                    .swiper-slide 
+                        +product-card('tpl/assets/img/product.png', 'Оборудование ЭХЗ')
+                    .swiper-slide 
+                        +product-card('tpl/assets/img/product.png', 'Телеметрия ЭХЗ')
+                    .swiper-slide 
+                        +product-card('tpl/assets/img/product.png', 'Комплекс телемеханики')
+                    .swiper-slide 
+                        +product-card('tpl/assets/img/product.png', 'Комплекс телемеханики')
+                    .swiper-slide 
+                        +product-card('tpl/assets/img/product.png', 'Оборудование ЭХЗ')
+                    .swiper-slide 
+                        +product-card('tpl/assets/img/product.png', 'Телеметрия ЭХЗ')
+                    .swiper-slide
+                        +product-card('tpl/assets/img/product.png', 'Станции катодной защиты ПКЗ-АР')
