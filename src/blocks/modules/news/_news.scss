@@ -18,10 +18,13 @@
     }
 }
 .main-news {
+    display: flex;
+    flex-direction: column;
     background:
         linear-gradient(0deg, rgba(21, 38, 60, 0.7), rgba(21, 38, 60, 0.7)),
         url(../assets/img/news-bg.jpg) center / cover;
     max-width: 530px;
+    min-height: 344px;
     padding: 40px;
     color: $white-color;
     &__title {
@@ -31,7 +34,7 @@
         margin-bottom: 20px;
     }
     &__text {
-        margin-bottom: 85px;
+        margin-bottom: auto;
     }
 }
 .list-news {
