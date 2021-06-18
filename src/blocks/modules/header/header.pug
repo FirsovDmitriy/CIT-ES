@@ -12,6 +12,7 @@ header.header
 					button.header-search__btn
 						img.header-search__icon(src="tpl/assets/svg/search.svg", alt="")
 	nav.header__menu.header-menu 
+		.header-menu__outer
 		.container
 			.header-menu__burger
 				span.header-menu__line 
@@ -20,18 +21,19 @@ header.header
 					each menuItem in ['О компании', 'Продукция', 'Сертификаты', 'Проектировщикам', 'Сервис', 'Новости', 'Контакты']
 						li.header-menu__item
 							a.header-menu__link(href="#")= menuItem
-	.header-menu__inner.menu-inner 
+	.header__menu-inner.menu-inner
 		.container
-			.menu-inner__col
-				ul.menu-inner__list
-					each internalMenuItem in ['Станции катодной защиты ПКЗ-АР', 'Оборудование ЭХЗ', 'Телеметрия ЭХЗ']
-						li.menu-inner__item 
+			.menu-inner__wrapper
+				.menu-inner__col
+					ul.menu-inner__list
+						each internalMenuItem in ['Станции катодной защиты ПКЗ-АР', 'Оборудование ЭХЗ', 'Телеметрия ЭХЗ']
+							li.menu-inner__item 
+								a.menu-inner__link(href="#")= internalMenuItem
+				.menu-inner__col 
+					ul.menu-inner__list 
+						each internalMenuItem in ['Комплекс телемеханики', 'Приборы']
 							a.menu-inner__link(href="#")= internalMenuItem
-			.menu-inner__col 
-				ul.menu-inner__list 
-					each internalMenuItem in ['Комплекс телемеханики', 'Приборы']
-						a.menu-inner__link(href="#")= internalMenuItem
-			.menu-inner__col 
-				.menu-inner__images 
-					.menu-inner__image-block 
-						img.menu-inner__img(src="tpl/assets/img/header/inner-menu-img.png", alt="")
+				.menu-inner__col 
+					.menu-inner__images 
+						.menu-inner__image-block 
+							img.menu-inner__img(src="tpl/assets/img/header/inner-menu-img.png", alt="")

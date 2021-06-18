@@ -47,5 +47,28 @@
 }
 
 .menu-inner {
-    display: none;
+    height: 400px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+    &__list {
+        width: 250px;
+    }
+    &__item {
+        & + & {
+            margin-top: 20px;
+        }
+    }
+    &__link {
+        line-height: 27px;
+        transition: $transition;
+        &:hover {
+            color: $orange-color;
+        }
+    }
+    &__images {
+        padding: 0 15px 0 0;
+    }
 }
