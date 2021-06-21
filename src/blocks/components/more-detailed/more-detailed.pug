@@ -1,7 +1,7 @@
 include ../ico/ico
 
-mixin more-detailed (href, modifier1, modifier2)
-    a.more-detailed(href= href class= modifier1)
+mixin more-detailed (href, modifier)
+    a.more-detailed(href= href class= modifier)
         span.more-detailed__text Подробнее
-        .more-detailed__circle(class= modifier2)
+        .more-detailed__circle
             +ico('round-arrow')

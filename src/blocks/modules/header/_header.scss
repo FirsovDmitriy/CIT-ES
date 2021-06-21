@@ -60,15 +60,15 @@
 .sub-menu {
     transform: translateY(-199%);
     position: absolute;
-    top: 34px;
+    top: 39px;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 10;
     height: 400px;
-    padding: 23px 0 0 0;
+    padding: 18px 0 0 0;
     &__wrapper {
-        background: $white-color;
+        background: url(../assets/svg/sub-menu-bg.svg) right no-repeat $white-color;
         height: 100%;
     }
     &__row {

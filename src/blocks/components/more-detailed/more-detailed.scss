@@ -15,5 +15,18 @@
     }
     .ico {
         width: 7px;
+        stroke: $blue-color;
+    }
+    &--orange:hover {
+        color: $orange-color;
+        .more-detailed__circle {
+            border: 1px solid $orange-color;
+            svg {
+                stroke: $orange-color;
+            }
+        }
+    }
+    &--white:hover {
+        
     }
 }

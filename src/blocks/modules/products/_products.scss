@@ -1,7 +1,16 @@
 .product {
+    overflow: hidden;
     padding: 80px 0;
     &__title {
         margin-bottom: 30px;
+    }
+}
+.product-slider {
+    .swiper-container {
+        overflow: visible;
+    }
+    .swiper-slide {
+        width: 341px;
     }
 }
 .card-product {
@@ -9,8 +18,7 @@
     background: $white-color-200;
     display: flex;
     flex-direction: column;
-    width: 341px;
-    height: 400px;
+    min-height: 400px;
     padding: 40px 40px 40px 40px;
     cursor: pointer;
     &__block-img {
@@ -30,6 +38,15 @@
     &:hover {
         .product-info--active {
             opacity: 1;
+        }
+        .more-detailed {
+            color: $white-color;
+            .more-detailed__circle {
+                border: 1px solid $white-color;
+                svg {
+                    stroke: $white-color;
+                }
+            }
         }
     }
 }
