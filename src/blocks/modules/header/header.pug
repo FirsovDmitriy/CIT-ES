@@ -1,39 +1,62 @@
 header.header
-	.container
-		.header__top
-			.header__info.header-info 
-				.header-info__logo 
-					img.header-info__lofo-icon(src="tpl/assets/svg/logo.svg", alt="")
-				a.header-info__phone(href="tel:+78452692196") +7 (8452) 69-21-96 
-				a.header-info__email(href="mailto:kom@cit-es.ru") kom@cit-es.ru 
-			.header-info__search.header-search
-				form.header-search__form(action="")
-					input.header-search__input(type="text" placeholder="Поиск")
-					button.header-search__btn
-						img.header-search__icon(src="tpl/assets/svg/search.svg", alt="")
-	nav.header__menu.header-menu 
-		.header-menu__outer
+
+	.header__top.header-top
 		.container
-			.header-menu__burger
-				span.header-menu__line 
-			.header-menu__body 
-				ul.header-menu__list 
-					each menuItem in ['О компании', 'Продукция', 'Сертификаты', 'Проектировщикам', 'Сервис', 'Новости', 'Контакты']
-						li.header-menu__item
-							a.header-menu__link(href="#")= menuItem
-	.header__menu-inner.menu-inner
-		.container
-			.menu-inner__wrapper
-				.menu-inner__col
-					ul.menu-inner__list
-						each internalMenuItem in ['Станции катодной защиты ПКЗ-АР', 'Оборудование ЭХЗ', 'Телеметрия ЭХЗ']
-							li.menu-inner__item 
-								a.menu-inner__link(href="#")= internalMenuItem
-				.menu-inner__col 
-					ul.menu-inner__list 
-						each internalMenuItem in ['Комплекс телемеханики', 'Приборы']
-							a.menu-inner__link(href="#")= internalMenuItem
-				.menu-inner__col 
-					.menu-inner__images 
-						.menu-inner__image-block 
-							img.menu-inner__img(src="tpl/assets/img/header/inner-menu-img.png", alt="")
+			.header-top__wrapper
+				.header-top__info
+					.header__logo
+						a.header__logo-link(href="#")
+							img.header__logo-icon(src="tpl/assets/svg/logo.svg", alt="") 
+					a.header-top__phone(href="tel:+78452692196") +7 (8452) 69-21-96 
+					a.header-top__email(href="mailto:kom@cit-es.ru") kom@cit-es.ru 
+				.header-top__search.header-search
+					form.header-search__form(action="")
+						input.header-search__input(type="text" placeholder="Поиск")
+						button.header-search__btn
+							img.header-search__icon(src="tpl/assets/svg/search.svg", alt="")
+
+	nav.header__nav.nav-header 
+		.nav-header__menu.menu 
+			.container 
+				.menu__burger-btn.burger-btn 
+					.burger-btn__line 
+				ul.menu__list 
+					li.menu__list-item 
+						a.menu__list-link(href="#") О компании 
+					li.menu__list-item 
+						a.menu__list-link(href="#") Продукция
+						.sub-menu
+							.sub-menu__wrapper
+								.container
+									.sub-menu__row
+										.sub-menu__col
+											ul.sub-menu__list
+												li.sub-menu__list-item
+													a.sub-menu__list-link(href="#") Станции катодной защиты ПКЗ-АР
+												li.sub-menu__list-item 
+													a.sub-menu__list-link(href="#") Оборудование ЭХЗ
+												li.sub-menu__list-item 
+													a.sub-menu__list-link(href="#") Телеметрия ЭХЗ
+										.sub-menu__col 
+											ul.sub-menu__list 
+												li.sub-menu__list-item 
+													a.sub-menu__list-link(href="#") Комплекс телемеханики 
+												li.sub-menu__list-item 
+													a.sub-menu__list-link(href="#") Приборы
+										.sub-menu__col
+											.sub-menu__image-block 
+												.sub-menu__img 
+													img(src="tpl/assets/img/header/inner-menu-img.png", alt="")
+					li.menu__list-item 
+						a.menu__list-link(href="#") Сертификаты
+					li.menu__list-item 
+						a.menu__list-link(href="#") Проектировщикам
+					li.menu__list-item 
+						a.menu__list-link(href="#") Сервис
+					li.menu__list-item 
+						a.menu__list-link(href="#") Новости
+					li.menu__list-item 
+						a.menu__list-link(href="#") Контакты
+
+
+

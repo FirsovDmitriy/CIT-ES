@@ -20,5 +20,5 @@ new Swiper('.main-slider__wrapper', {
 new Swiper('.product-slider__wrapper', {
     slidesPerView: 3.4,
 
-    spaceBetween: 40
+    spaceBetween: 80
 })
