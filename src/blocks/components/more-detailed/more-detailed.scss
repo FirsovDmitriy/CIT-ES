@@ -12,9 +12,11 @@
         border: 1px solid $blue-color;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .ico {
-        width: 7px;
+        width: 8px;
+        height: 25px;
         stroke: $blue-color;
     }
     &--orange:hover {
@@ -25,8 +27,5 @@
                 stroke: $orange-color;
             }
         }
-    }
-    &--white:hover {
-        
     }
 }

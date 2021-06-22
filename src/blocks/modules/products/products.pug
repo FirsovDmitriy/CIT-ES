@@ -1,15 +1,15 @@
 include ../../components/more-detailed/more-detailed
 
 //- Mixin
-mixin product-card (img, titleX, titleZ)
+mixin product-card (img, title-f, title-s)
     .product__card.card-product
         .card-product__block-img 
             img.card-product__img(src= img, alt="")
-        h4.card-product__title= titleX
+        h4.card-product__title= title-f
         .card-product__block-link
             +more-detailed('#')
         .card-product__info.product-info.product-info--active
-            h3.product-info__title= titleZ
+            h3.product-info__title= title-s
             p.product-info__text Коррозия подземных трубопроводов является одной из причин их разгермитизации вследствии образования каверн, трещин и разрывов.
 
 

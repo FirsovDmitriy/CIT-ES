@@ -10,7 +10,7 @@ body {
 .page-content {
   display: flex;
   flex-direction: column;
-  flex: auto;
+  flex: 1 0 auto;
 }
 h1,h2,h3,h4,h5 {
   @include Osvald();
